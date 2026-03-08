@@ -1,0 +1,181 @@
+<h1>This is learning of CSS journey</h1>
+
+<h2>List of all CSS Topic</h2>
+
+1. hCSS
+2. Basic Syntax
+   selector{
+    property:value;
+   }
+  
+3.Including Styling
+  ->Inline CSS
+  ->Internal CSS
+  ->External CSS
+
+  Priority order:Inline > Internal > External
+
+4.Color property
+    Used to set the color of foreground
+
+    foreground:Foreground wo hota hai jo user directly dekhta aur padhta hai:
+      color          /* text ka color */
+      opacity        /* content ki transparency */
+      z-index        /* kis element ko upar dikhana hai */
+      border         /* element ka outline */
+
+5.Background color
+
+6.Color Systems
+  ->RGB :color:  rgb(255, 0, 0);
+  ->Hex (Hexadecimal) : color : #ff0000;
+  
+7.Selectors
+  ->Universal Selector : *{ }
+
+  ->Class Selector : .myClass { }
+
+  ->Element Selector : 1 { }
+
+  ->Id Selector : #myId { }
+
+8.Text Properties
+
+   ->text-align : left / right / center
+   ->text-decoration : underline / overline / line-through
+   ->font-weight : normal / bold / bolder / lighter
+   ->font-weight : 100-900
+   -> line-height :16px(by default)
+   ->text-tranform : uppercase / lowercase / capitalize / none
+   ->font-family
+
+9.Units in CSS  
+ <h5>Absolute</h5>
+  pixels (px)--96px = 1 inch
+
+  <h5>Relative</h5>
+  %- size as relative to an element's parent object.
+  em-font sixe of the parent 
+  rem-font size of the root element
+
+  <h5>others</h5>
+  vh: relative to 1% viewport height 
+  vw : relative to 1% viewport width 
+
+
+10.Box Model in CSS
+   
+->Height
+->Width
+->Border
+      <h4>
+          border-width : 2px;
+          border-style : solid / dotted / dashed
+          border-color : black;
+      </h4>
+      <pre>shorthand form : border:2px solid black;</pre>
+  
+->border-radius
+->padding
+          <h4>Shorthand</h4>
+          padding: 50px;
+          padding: 1px 2px 3px 4px;
+                   top | right | bottom | left -> clockwise  
+
+->margin
+        <h4>Shorthand</h4>
+        margin: 50px;
+        
+        margin: 1px 2px 3px 4px;
+        
+               top | right | bottom | left -> clockwise
+
+11.Display Property
+    display: inline / block / inline-block / none
+
+12.Visibility
+    visibility: hidden; 
+    <span>Note : When visibility is set to none, space for the element is reserved.
+    But for display set to none, no space is reserved or blocked for the
+    element.
+    </span>
+
+13.opacity (0 to 1)
+       color:  rgba(255, 0, 0, 0.5);
+       color:  rgba(255, 0, 0, 1);
+
+****14.Position:how an element is positioned in a document.
+   
+     position : static / relative / absolute / fixed
+
+     <imp>jis element ko <h5>Position absolute</h5>bante hai woh uppar utta jata aur piche wala element agy a jayega.</imp>
+
+     <imp>jis element ko <h5> Position relative</h5> bante hai uske andhar hume rakna hota hai.</imp>
+
+     <imp>In case of position absolute element containing another element which is position element.In this case first position absolute element will be acting as a postion relative.</imp>
+
+15.z-index :It decides the stack level of elements
+  👉 z-index decide karta hai ki kaunsa element upar dikhega aur kaunsa neeche, jab elements overlap kar rahe hote hain.
+  <pre>
+    Rule:
+    z-index value jitni zyada, element utna upar
+
+    1. Basic Concept
+
+    Socho aapne cards ko ek-dusre ke upar rakh diya 📄
+    Jo card upar hoga → higher z-index
+  </pre>
+  <b>Important Rule (MOST IMPORTANT – interview favorite)
+
+❗ z-index tabhi kaam karta hai jab element positioned ho
+
+position: relative | absolute | fixed | sticky
+
+
+❌ Ye kaam nahi karega:
+
+position: static; /* default */</b>
+
+16.Background Image
+     background-image : url("image.jpeg");
+     background-size : cover / contain / auto 
+     background-position:center;
+
+17.Flexbox :one-dimensional layout method for arranging items in rows or columns.
+  <img src="Flexbox Layout.png" alt="">
+
+  ->Flex-direction
+   <img src="Flex_Direction.png" alt="">
+  
+  ->Flex Properties for Flex-Item
+  <img src="Flexproperties_for_flex item.png" alt="">
+
+  ->Flex Poperties for Flex-Container
+  <img src="Flexproperties_for_flex_container.png" alt="">
+
+18.Media Queries
+    Media Queries allow CSS to apply conditionally based on device characteristics like screen width, height, or orientation.
+
+    <h2>👉 Media Queries ka use CSS me responsive design ke liye hota hai.
+Matlab: screen size / device ke hisaab se CSS change karna.</h2>
+
+<pre>
+  /* Mobile */
+@media (max-width: 480px) {}
+
+/* Tablet */
+@media (max-width: 768px) {}
+
+/* Laptop */
+@media (max-width: 1024px) {}
+
+/* Desktop */
+@media (min-width: 1200px) {}
+
+</pre>
+
+19.    
+
+  
+     
+
